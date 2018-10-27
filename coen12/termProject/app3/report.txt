@@ -1,0 +1,16 @@
+					  Worst Case Big O
+SET *createSet				O(1)
+
+void destroySet				O(n)
+
+void addElement				O(1)	
+
+void removeElement			O(n)	
+
+findElement					O(n)
+
+maxAgeGap					O(1)
+
+getItems					O(n)
+
+A linked list should be implemented for Application Three because the number of students fluctuates dramatically.  An array or hash table will not be as effective because it will continuously need to be reallocated to fit the correct number of records.  With an unsorted circularly linked list, adding an element will always have a Big O run time of O(1).  Using a counter allows us to calculate the max age gap in O(1).  Removing an element will take O(n) because the whole linked list needs to be traversed to search for a specific element, and for this same reason the findElement function will take O(n).  Two of the three most common functions have a O(1) run-time.  This combined with the fact that the number of records fluctuates heavily makes implementing a linked list the ideal option.  

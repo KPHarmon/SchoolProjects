@@ -1,0 +1,13 @@
+					  Worst Case Big O
+SET *createSet				O(n)
+
+void destroySet				O(n)
+
+void addElement				O(1)	
+
+void removeElement			O(1)	
+
+findElement					O(1)
+
+A hash table is the ideal dataset set for Application Two because our data structure has a static size, there is infrequent insertion and deletion, and there is frequent searching.  In this particular implementation, adding, deleting, and finding an element all take
+O(1) because it is a one-to-one table.  All student ids are unique so we know that there will be no collision when searching for records based off of id.  O(n) is required while creating and destroying the set because an array of flags needs to be initialized, however this cannot be avoided.  The fact that this function only needs to be run once makes it less impactful to the runtime than an operation that will frequently run such as searching.  The reason for choosing to implement a hash table instead of a linked list or array is because a linked list will always be O(n) when searching for a element and in an array (assuming it is sorted), the runtime will be O(logn).  These datasets cannot compete with the speed of a hash table in this scenario.
