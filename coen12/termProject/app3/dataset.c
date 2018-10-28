@@ -106,7 +106,6 @@ void removeItem (LIST *lp, int eltId){
 //Worst Case: O(n)  Average Case: O(n)
 //Function to find a node with given information
 void findItem(LIST *lp, int eltId){
-	int flag = 0;
 	assert(lp != NULL);	
 	NODE *pLoc = lp->head->next;
 	//Traverse the linked list until we reach the beginning or we find the matching node
